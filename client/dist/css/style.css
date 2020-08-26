@@ -1,0 +1,346 @@
+html,body{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+     z-index: -3;
+   background-image: url("../assets/background.jpg");
+    height:100%;
+   width: 100%;
+   position:relative;
+}
+
+
+#main-container{
+    min-height:100%;
+    min-width:100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family:"Trebuchet MS";
+    z-index: -2;
+    background:-webkit-linear-gradient(-45deg, rgb(31, 38, 103, 0.85),rgb(18, 18, 18, 0.9),rgb(31, 38, 103,0.95));
+  
+}
+
+#main-container .content{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+div#blur{
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    top:0;
+    padding-bottom: 15px;
+    height:6vh;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+div#navi{
+    position: fixed;
+    top:0;
+     transition: all 0.5s ease;
+     width:100%;
+     z-index: 10;
+     padding-bottom: 15px;
+     height:6vh;
+}
+
+div#navi nav{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+    max-width: 1200px;
+    padding: 15px 25px;
+    z-index: 10;
+}
+
+div#navi p{
+    margin: 0;
+    padding:8px 23px;
+    border-radius:5px;
+}
+
+div#navi p:hover{
+    border: 1px solid #50e3c2;
+    color:#50e3c2;
+}
+
+
+div#navi .menuBar{
+    width:35px;
+    height:32px;
+}
+
+.menu, .menu-shorter{
+   width: 100%;
+   height:20%;
+    background-color: white;
+    margin: 3px 0;
+    border-radius:3px;
+  }
+
+.menu-shorter{width: 68%; }
+
+#navi button{
+    padding:8px 23px;
+    background-color:#1DB492;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    font-family:"Trebuchet MS";
+    font-size:0.85rem;
+    color:white;
+    min-width:13%;
+    cursor: default;
+  }
+
+
+div.footer{
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    padding:0 35px 0 35px;
+}
+
+footer{
+    width: 90%;
+    text-align: center;
+    border-top: 1px solid rgb(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    padding:8px;
+    margin:0 auto;
+}
+
+.footer footer div.github-logo{
+    width:20px;
+    height: 20px;
+}
+
+.footer footer div.github-logo img{
+    width:100%;
+    height:100%;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+ .first, .second {
+    margin-left: 30px;
+}
+
+div#wrapper{
+    flex:1 0 auto;
+    padding:0 25px 0 25px;
+    margin-top: 6rem;
+}
+
+.video-ratio{
+    padding:16px 26px 25px 17px; 
+    border-style: inset inset outset outset;
+    border-width: 10px;
+    border-color: rgb(35,35,35);
+    border-radius:5px;
+}
+
+.main-video-div{
+    position: relative;
+    padding-bottom:42.8571%;
+}
+
+#main-video{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgb(10,10,10,0.9);
+    outline: none;
+    padding:2px;
+    box-shadow: 2px 2px 5px black;
+    border-radius:5px;
+    border:1px solid rgb(255,255,255,0.2);
+}
+
+.previews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgb(24,24,24);*/
+   /*border:1px solid  rgb(140,22,52, 0.3);*/
+   /*box-shadow: 3px 3px 5px black;*/
+    min-width:0; 
+    padding:0 35px 0 35px;
+    margin:1.5rem 0 1.5rem 0;
+}
+
+.previews .selection{
+    width: 55%;
+    margin:0.5rem;
+}
+
+.previews .selection p#heading{
+      text-align:center;
+      border:1px solid rgb(80, 227, 194,0.5);
+      border-bottom:1px solid rgb(80, 227, 194,0.5);
+    padding:8px;
+    color:#50e3c2;
+    text-transform: uppercase;
+     animation: move 5s ease  infinite;
+     margin-bottom: 0;
+     box-shadow: 2px 2px 6px black;
+     margin-top: 0;
+}
+
+.previews .selection p#dotted{
+      text-align:center;
+    color:#50e3c2;
+    margin-top: 5px;
+    padding:8px;
+    font-size:0.9rem;
+    border-left:3px dotted rgb(80, 227, 194,0.3);
+    border-bottom:3px dotted rgb(80, 227, 194,0.3);
+    border-right:3px dotted rgb(80, 227, 194,0.3);
+    width:70%;
+    margin:0 auto;
+}
+
+.carousel{
+    width:100%;
+    max-height:70%;
+}
+
+.carousel .nav-wrap{
+    position:relative;
+    transition: 0.5s;
+    outline: none;
+    padding:5px;
+}
+
+.carousel .fg{
+    height: 100%;
+    outline: none;
+}
+
+ .carousel .nav-wrap p{
+    margin-top:10px;
+    font-size:0.9rem;
+    color: white;
+}
+
+.carousel .thumbNail{
+    width:100%;
+    height:180px;
+    transition:0.5s;
+    border-radius: 5%;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0.8;
+    object-fit: cover;
+    border:1px solid rgb(255,255,255,0.3);
+}
+
+ .carousel .thumbNail:hover{
+    transform: scale(1.15);
+    border:1.3px solid white;
+    opacity: 1;
+    box-shadow: 1px 1px 2px rgb(255,255,255,0.3);
+}
+
+.slick-slide{
+    padding:10px;
+    margin: 15px 13px 0 13px ;
+    text-align:center;
+}
+
+.slick-slider div{
+    transition: none;
+}
+
+.slick-arrow{
+    margin:-1rem;
+    border-radius: 5px;
+    transition: 0.35s;
+}
+
+.slick-arrow:hover{
+    background-color:#1DB492;
+    padding:0.5px;
+    box-shadow: 2px 2px 5px black;
+    transition: 0.35s;
+}
+
+li.slick-active button{
+    background-color: #50E3C2;
+}
+
+.previews .slick-dots li button{
+    border:1px solid rgb(255,255,255,0.3);
+    padding:0 15px;
+    height:6px;
+}
+
+.slick-dots li button::before {
+    display: none;
+  }
+
+  .slick-dotted{bottom-margin:10px;}
+
+.loader{
+    text-align: center;
+    padding:10px;
+    margin-left: 24px;
+}
+
+@media only screen and (max-width : 768px) and (min-width:650px){
+    .previews .selection p#heading{
+        margin-top:1.5rem;
+    }
+}
+
+@media only screen and (max-width : 630px) {
+    body{
+         font-size:0.8rem;
+    }
+
+    div#navi button{
+         font-size:0.7rem;
+         padding: 8px 18px;
+    }
+
+    div#navi p{
+        padding:4px 13px;
+    }
+
+    div#navi .menuBar{
+        width:27px;
+    }
+
+    .slick-slide{
+    margin: 15px 6px 0 6px ;
+    }
+
+    .selection p#dotted{
+        font-size:0.7rem;
+    }
+
+    .previews .selection{
+        width: 100%;
+
+    }
+}
+
+
